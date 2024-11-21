@@ -14,11 +14,13 @@ requires = ['setuptools >= 61.0']
 build-backend = 'setuptools.build_meta'
 
 [project]
-version = '0.1.0'
-name = 'python-package-cookiecutter'
-description = 'Get the oven ready!'
+version = '0.0.1'
+name = '{{ cookiecutter.project_name_dash }}'
+{% if cookiecutter.project_description %}
+description = '{{ cookiecutter.project_description }}'
+{% endif %}
 readme = 'README.md'
-requires-python = '>= 3.12'
+requires-python = '>= {{ cookiecutter.python_version }}'
 
 # https://docs.astral.sh/ruff/settings/#top-level
 [tool.ruff]
@@ -36,7 +38,7 @@ lines-after-imports = 2
 
 # https://mypy.readthedocs.io/en/stable/config_file.html
 [tool.mypy]
-python_version = '3.12'
+python_version = '{{ cookiecutter.python_version }}'
 disallow_untyped_calls = true
 disallow_untyped_defs = true
 disallow_incomplete_defs = true

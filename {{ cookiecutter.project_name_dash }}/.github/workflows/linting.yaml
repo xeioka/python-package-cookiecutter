@@ -13,9 +13,9 @@ name: Linting
 
 on:
   push:
-    branches: [main]
+    branches: [{{ cookiecutter.__repository_main_branch }}]
   pull_request:
-    branches: [main]
+    branches: [{{ cookiecutter.__repository_main_branch }}]
 
 jobs:
   lint:
@@ -23,7 +23,7 @@ jobs:
     strategy:
       max-parallel: 4
       matrix:
-        python-version: [3.12]
+        python-version: [{{ cookiecutter.python_version}}]
     steps:
       # Checkout the project.
       - uses: actions/checkout@v4
@@ -31,7 +31,7 @@ jobs:
       # Setup Python.
       - uses: actions/setup-python@v5
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: {{ '${{ matrix.python-version }}' }}
           cache: pip
 
       # Install Python requirements.
@@ -43,14 +43,14 @@ jobs:
       # Run Ruff.
       # https://docs.astral.sh/ruff/integrations/#github-actions
       - name: Run Ruff linter
-        if: ${{ !cancelled() }}
+        if: {{ '${{ !cancelled() }}' }}
         run: ruff check . --output-format github
       - name: Run Ruff formatter
-        if: ${{ !cancelled() }}
+        if: {{ '${{ !cancelled() }}' }}
         run: ruff format . --check
 
       # Run mypy.
       # https://mypy.readthedocs.io/en/stable/command_line.html
       - name: Run mypy
-        if: ${{ !cancelled() }}
+        if: {{ '${{ !cancelled() }}' }}
         run: mypy . --ignore-missing-imports

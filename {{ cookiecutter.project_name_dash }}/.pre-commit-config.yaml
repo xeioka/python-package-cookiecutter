@@ -8,7 +8,7 @@
 #   - https://pre-commit.com/#adding-pre-commit-plugins-to-your-project
 
 default_language_version:
-  python: python3.12
+  python: python{{ cookiecutter.python_version }}
 
 repos:
   # Ruff.
