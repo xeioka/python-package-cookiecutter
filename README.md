@@ -2,6 +2,8 @@
 
 > _Namespaces are one honking great idea -- let's do more of those!_
 
+Get the oven ready!
+
 ## Requirements
 
 1. [Cookiecutter](https://www.cookiecutter.io) >= 2.6.0 (usage);
