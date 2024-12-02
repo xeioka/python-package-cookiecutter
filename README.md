@@ -23,3 +23,7 @@ Get the oven ready!
     git init && git add . && git commit -m "Add Python package."
     gh repo create
     ```
+
+## Contributing
+
+See [Contributing](/docs/contributing.md).
