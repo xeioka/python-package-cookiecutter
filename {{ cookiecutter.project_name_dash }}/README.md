@@ -10,9 +10,9 @@
 
 1. [Python](https://www.python.org) >= {{ cookiecutter.python_version }};
 
-## Usage
+## Installing
 
-Install from GitHub repository (see [the documentation](https://pip.pypa.io/en/stable/topics/vcs-support/#vcs-support) or run `pip install --help`):
+Install from GitHub repository (see [the documentation](https://pip.pypa.io/en/stable/topics/vcs-support/#git) or run `pip install --help`):
 
 ```sh
 pip install git+ssh://git@github.com/{{ cookiecutter.repository_user }}/{{ cookiecutter.repository_name }}.git
@@ -20,22 +20,4 @@ pip install git+ssh://git@github.com/{{ cookiecutter.repository_user }}/{{ cooki
 
 ## Contributing
 
-1. Clone the repository:
-
-    ```sh
-    git clone git@github.com:{{ cookiecutter.repository_user }}/{{ cookiecutter.repository_name }}.git
-    cd {{ cookiecutter.repository_name }}
-    ```
-
-2. Create a Python virtual environment and install the requirements:
-
-    ```sh
-    python{{ cookiecutter.python_version }} -m venv .venv && source .venv/bin/activate
-    pip install -r requirements/dev.txt
-    ```
-
-3. Install pre-commit hooks:
-
-    ```sh
-    pre-commit install
-    ```
+See [Contributing](/docs/contributing.md).
