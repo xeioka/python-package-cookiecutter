@@ -14,11 +14,11 @@ requires = ['setuptools >= 61.0']
 build-backend = 'setuptools.build_meta'
 
 [project]
-version = '0.0.1'
 name = '{{ cookiecutter.project_name_dash }}'
 {% if cookiecutter.project_description %}
 description = '{{ cookiecutter.project_description }}'
 {% endif %}
+version = '0.0.1'
 readme = 'README.md'
 requires-python = '>= {{ cookiecutter.python_version }}'
 
