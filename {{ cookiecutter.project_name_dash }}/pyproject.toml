@@ -10,28 +10,28 @@
 #   - https://packaging.python.org/en/latest/specifications/pyproject-toml/
 
 [build-system]
-requires = ['setuptools >= 61.0']
-build-backend = 'setuptools.build_meta'
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
 
 [project]
-name = '{{ cookiecutter.project_name_dash }}'
+name = "{{ cookiecutter.project_name_dash }}"
 {% if cookiecutter.project_description %}
-description = '{{ cookiecutter.project_description }}'
+description = "{{ cookiecutter.project_description }}"
 {% endif %}
-version = '0.0.1'
-readme = 'README.md'
-requires-python = '>= {{ cookiecutter.python_version }}'
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">= {{ cookiecutter.python_version }}"
 
 # https://docs.astral.sh/ruff/settings/#top-level
 [tool.ruff]
-required-version = '0.7.0'
+required-version = "0.7.0"
 line-length = 100
-cache-dir = 'local/.ruff_cache'
+cache-dir = "local/.ruff_cache"
 
 # https://docs.astral.sh/ruff/settings/#lint
 [tool.ruff.lint]
-extend-select = ['D', 'I']
-ignore = ['D203', 'D213', 'D413']
+extend-select = ["D", "I"]
+ignore = ["D203", "D213", "D413"]
 
 # https://docs.astral.sh/ruff/settings/#lintisort
 [tool.ruff.lint.isort]
@@ -39,7 +39,7 @@ lines-after-imports = 2
 
 # https://mypy.readthedocs.io/en/stable/config_file.html
 [tool.mypy]
-python_version = '{{ cookiecutter.python_version }}'
+python_version = "{{ cookiecutter.python_version }}"
 disallow_untyped_calls = true
 disallow_untyped_defs = true
 disallow_incomplete_defs = true
@@ -53,4 +53,4 @@ warn_unused_ignores = true
 warn_no_return = true
 warn_return_any = true
 warn_unreachable = true
-cache_dir = 'local/.mypy_cache'
+cache_dir = "local/.mypy_cache"
