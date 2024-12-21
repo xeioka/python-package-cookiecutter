@@ -10,9 +10,9 @@
 
 1. [Python](https://www.python.org) >= {{ cookiecutter.python_version }};
 
-## Installing
+## Installation
 
-Install from GitHub repository (see [the documentation](https://pip.pypa.io/en/stable/topics/vcs-support/#git) or run `pip install --help`):
+From GitHub repository (see [pip documentation](https://pip.pypa.io/en/stable/topics/vcs-support/#git) or run `pip install --help`):
 
 ```sh
 pip install git+ssh://git@github.com/{{ cookiecutter.repository_user }}/{{ cookiecutter.repository_name }}.git
