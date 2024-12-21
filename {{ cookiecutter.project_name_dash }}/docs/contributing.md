@@ -1,5 +1,9 @@
 # Contributing
 
+## Requirements
+
+1. [Python](https://www.python.org) >= {{ cookiecutter.python_version }};
+
 ## Setup
 
 1. Clone the repository:

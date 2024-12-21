@@ -6,11 +6,11 @@ Get the oven ready!
 
 ## Requirements
 
-1. [Cookiecutter](https://www.cookiecutter.io) >= 2.6.0 (usage);
+1. [Cookiecutter](https://www.cookiecutter.io) >= 2.6.0;
 
 ## Usage
 
-1. Cut your cookie (see [pip documentation](https://cookiecutter.readthedocs.io/en/stable/usage.html) or run `cookiecutter --help`):
+1. Cut your cookie (see [cookiecutter documentation](https://cookiecutter.readthedocs.io/en/stable/usage.html) or run `cookiecutter --help`):
 
     ```sh
     cookiecutter git@github.com:xeioka/python-package-cookiecutter.git
