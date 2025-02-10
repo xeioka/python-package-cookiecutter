@@ -1,7 +1,5 @@
 # Python Package Cookiecutter
 
-> _Namespaces are one honking great idea -- let's do more of those!_
-
 Get the oven ready!
 
 ## Requirements

@@ -23,7 +23,7 @@ jobs:
     strategy:
       max-parallel: 4
       matrix:
-        python-version: [{{ cookiecutter.python_version}}]
+        python-version: [{{ cookiecutter.python_version }}]
     steps:
       # Checkout the project.
       - uses: actions/checkout@v4

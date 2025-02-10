@@ -1,0 +1,16 @@
+# Packaging (and other) tools configuration.
+#
+# Resources
+# ---------
+# Packaging documentation:
+#   - https://packaging.python.org/en/latest/
+# Configuration overview:
+#   - https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
+# Configuration specification:
+#   - https://packaging.python.org/en/latest/specifications/pyproject-toml/
+
+[project]
+name = "python-package-cookiecutter"
+description = "Get the oven ready!"
+version = "0.2.0"
+requires-python = ">= 3.12"
