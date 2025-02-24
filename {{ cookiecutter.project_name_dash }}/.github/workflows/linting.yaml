@@ -2,7 +2,7 @@
 #
 # Resources
 # ---------
-# GitHub Actions documentation:
+# Documentation:
 #   - https://docs.github.com/en/actions
 
 name: Linting
