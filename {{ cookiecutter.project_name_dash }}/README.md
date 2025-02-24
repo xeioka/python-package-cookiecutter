@@ -1,10 +1,8 @@
 # {{ cookiecutter.project_name }}
 
 [![Linting]({{ cookiecutter.__repository_url }}/actions/workflows/linting.yaml/badge.svg)]({{ cookiecutter.__repository_url }}/actions/workflows/linting.yaml)
-{% if cookiecutter.project_description %}
 
 {{ cookiecutter.project_description }}
-{% endif %}
 
 ## Requirements
 

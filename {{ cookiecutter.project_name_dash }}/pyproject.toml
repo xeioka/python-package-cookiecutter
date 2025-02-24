@@ -4,16 +4,10 @@
 # ---------
 # Packaging documentation:
 #   - https://packaging.python.org/en/latest/
-# Configuration overview:
-#   - https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
-# Configuration specification:
-#   - https://packaging.python.org/en/latest/specifications/pyproject-toml/
 
 [project]
 name = "{{ cookiecutter.project_name_dash }}"
-{% if cookiecutter.project_description %}
 description = "{{ cookiecutter.project_description }}"
-{% endif %}
 version = "0.0.1"
 readme = "README.md"
 requires-python = ">= {{ cookiecutter.python_version }}"
@@ -40,13 +34,13 @@ lines-after-imports = 2
 # https://mypy.readthedocs.io/en/stable/config_file.html
 [tool.mypy]
 python_version = "{{ cookiecutter.python_version }}"
+check_untyped_defs = true
+implicit_optional = true
 disallow_untyped_calls = true
 disallow_untyped_defs = true
 disallow_incomplete_defs = true
 disallow_untyped_decorators = true
 disallow_subclassing_any = true
-check_untyped_defs = true
-implicit_optional = true
 warn_redundant_casts = true
 warn_unused_ignores = true
 warn_no_return = true
