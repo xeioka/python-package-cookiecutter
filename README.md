@@ -4,7 +4,7 @@ Get the oven ready!
 
 ## Requirements
 
-1. [Cookiecutter](https://www.cookiecutter.io) >= 2.6.0;
+- [Cookiecutter](https://www.cookiecutter.io) >= 2.6.0;
 
 ## Usage
 

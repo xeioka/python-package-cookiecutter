@@ -2,7 +2,7 @@
 
 ## Requirements
 
-1. [Python](https://www.python.org) >= {{ cookiecutter.python_version }};
+- [Python](https://www.python.org) >= {{ cookiecutter.python_version }};
 
 ## Setup
 
