@@ -1,6 +1,6 @@
 # Python Package Cookiecutter
 
-Get the oven ready!
+Cookiecutter for a Python package.
 
 ## Requirements
 
@@ -8,7 +8,7 @@ Get the oven ready!
 
 ## Usage
 
-1. Cut your cookie (see [cookiecutter documentation](https://cookiecutter.readthedocs.io/en/stable/usage.html) or run `cookiecutter --help`):
+1. Generate project skeleton (see [cookiecutter documentation](https://cookiecutter.readthedocs.io/en/stable/usage.html) or run `cookiecutter --help`):
 
     ```sh
     cookiecutter git@github.com:xeioka/python-package-cookiecutter.git
@@ -18,7 +18,7 @@ Get the oven ready!
 
     ```sh
     cd {project-name}
-    git init && git add . && git commit -m "Add Python package."
+    git init && git add . && git commit -m "Add project skeleton."
     gh repo create
     ```
 
