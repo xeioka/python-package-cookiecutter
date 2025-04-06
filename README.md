@@ -8,7 +8,7 @@ Cookiecutter for a Python package.
 
 ## Usage
 
-1. Generate project skeleton (see [cookiecutter documentation](https://cookiecutter.readthedocs.io/en/stable/usage.html) or run `cookiecutter --help`):
+1. Generate project skeleton (see [Cookiecutter documentation](https://cookiecutter.readthedocs.io/en/stable/usage.html) or run `cookiecutter --help`):
 
     ```sh
     cookiecutter git@github.com:xeioka/python-package-cookiecutter.git
