@@ -1,7 +1,7 @@
 {
     "project_name": null,
-    "project_name_underscore": "{{ cookiecutter.project_name | lower | replace(' ', '_') }}",
-    "project_name_dash": "{{ cookiecutter.project_name_underscore | replace('_', '-') }}",
+    "project_name_dash": "{{ cookiecutter.project_name | lower | replace(' ', '-') }}",
+    "project_name_underscore": "{{ cookiecutter.project_name_dash | replace('-', '_') }}",
     "project_description": null,
     "python_version": 3.12,
     "repository_user": null,
