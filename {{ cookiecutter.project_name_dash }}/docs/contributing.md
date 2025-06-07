@@ -13,7 +13,7 @@
     cd {{ cookiecutter.repository_name }}
     ```
 
-2. Create a Python virtual environment and install the requirements:
+2. Create Python virtual environment and install the requirements:
 
     ```sh
     python{{ cookiecutter.python_version }} -m venv .venv
