@@ -3,7 +3,7 @@
     "project_name_dash": "{{ cookiecutter.project_name | lower | replace(' ', '-') }}",
     "project_name_underscore": "{{ cookiecutter.project_name_dash | replace('-', '_') }}",
     "project_description": null,
-    "python_version": 3.12,
+    "python_version": "3.12",
     "repository_user": null,
     "repository_name": "{{ cookiecutter.project_name_dash }}",
     "__repository_url": "https://github.com/{{ cookiecutter.repository_user }}/{{ cookiecutter.repository_name }}",
