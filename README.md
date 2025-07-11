@@ -14,14 +14,10 @@ Cookiecutter for a Python package.
     cookiecutter git@github.com:xeioka/python-package-cookiecutter.git
     ```
 
-2. Create a GitHub repository (requires [GitHub CLI](https://cli.github.com)):
+2. Create GitHub repository (requires [GitHub CLI](https://cli.github.com)):
 
     ```sh
     cd {project-name}
     git init && git add . && git commit -m "Add project skeleton."
     gh repo create
     ```
-
-## Contributing
-
-See [Contributing](/docs/contributing.md).
